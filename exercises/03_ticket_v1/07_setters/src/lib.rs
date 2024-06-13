@@ -38,6 +38,10 @@ impl Ticket {
         &self.title
     }
 
+    pub fn set_title(&mut self, new_title: String) -> &mut String {
+        self.title = new_title
+    }
+
     pub fn description(&self) -> &String {
         &self.description
     }
